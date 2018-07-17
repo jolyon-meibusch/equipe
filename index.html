@@ -9,43 +9,43 @@
   <title>Dashboard</title>
 </head>
 <body>
-  <div class="outer-grid">
-    <header class="main-header">
-      <div class="logo-container">
-        <a href="index.html" class="brand-logo">
-          <h1>L'Equipe</h1>
-        </a>
-      </div>
-      <div class="searchDiv">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-times"></i>
-        <input type="text" class="search-bar" >
-      </div>
-      <ul class="top-nav-icons">
-        <li>
-          <a href="#">
-            <i class="far fa-bell notification-icon"></i>
-            <span class="notification">3</span>
-          </a>
-        </li>
-        <li>
-          <a href="messages.html">
-            <i class="fas fa-envelope notification-icon"></i>
-            <span class="notification">4</span>
-          </a>
-        </li>
-        <li>
-          <a href="settings.html">
-            <i class="fas fa-cog notification-icon"></i>
-          </a>
-        </li>
-      </ul>
-      <div class="menu-icon">
+  <header class="main-header">
+    <div class="logo-container">
+      <a href="index.html" class="brand-logo">
+        <h1>L'Equipe</h1>
+      </a>
+    </div>
+    <div class="searchDiv">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-times"></i>
+      <input type="text" class="search-bar" >
+    </div>
+    <ul class="top-nav-icons">
+      <li>
         <a href="#">
-          <i class="fas fa-bars"></i>
+          <i class="far fa-bell notification-icon"></i>
+          <span class="notification">3</span>
         </a>
-      </div>
-    </header>
+      </li>
+      <li>
+        <a href="messages.html">
+          <i class="fas fa-envelope notification-icon"></i>
+          <span class="notification">4</span>
+        </a>
+      </li>
+      <li>
+        <a href="settings.html">
+          <i class="fas fa-cog notification-icon"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="menu-icon">
+      <a href="#">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <div class="outer-grid">
     <nav>
       <ul class="side-nav">
         <li class="profile">
@@ -66,32 +66,32 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="pages/news.html">
             <i class="far fa-newspaper"></i>
             <small>News</small>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="pages/fixtures.html">
             <i class="far fa-calendar-alt"></i>
             <small>Fixtures</small>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="pages/matchday.html">
             <i class="fas fa-futbol"></i>
             <small>Matchday</small>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="pages/teamlist.html">
             <i class="fas fa-users"></i>
             <small>Team List</small>
           </a>
         </li>
         <hr>
         <li>
-          <a href="login.html">
+          <a href="pages/login.html">
             <i class="fas fa-sign-out-alt"></i>
             <small>Log Out</small>
           </a>
@@ -99,104 +99,106 @@
       </ul>
     </nav>
     <section class="main-content">
-      <div class="main-container">
-        <div class="stat-cards">
-          <div class="stat-card orange">
-            <div class="card-title">
-              <i class="fas fa-futbol fa-2x"></i>
-              <h3>Next Game</h3>
+      <div class="dashboard-container">
+        <div class="dashboard-grid">
+          <div class="stat-cards">
+            <div class="stat-card orange">
+              <div class="card-title">
+                <i class="fas fa-futbol fa-2x"></i>
+                <h3>Next Game</h3>
+              </div>
+              <h2>Southpoint Sharks</h2>
             </div>
-            <h2>Southpoint Sharks</h2>
-          </div>
-          <div class="stat-card blue">
-            <div class="card-title">
-              <i class="fas fa-percent fa-2x"></i>
-              <h3>Quick Stat</h3>
+            <div class="stat-card blue">
+              <div class="card-title">
+                <i class="fas fa-percent fa-2x"></i>
+                <h3>Quick Stat</h3>
+              </div>
+              <h2>60% Home Record</h2>
             </div>
-            <h2>60% Home Record</h2>
-          </div>
-          <div class="stat-card green">
-            <div class="card-title">
-              <i class="fas fa-map-pin fa-2x"></i>
-              <h3>Location</h3>
+            <div class="stat-card green">
+              <div class="card-title">
+                <i class="fas fa-map-pin fa-2x"></i>
+                <h3>Location</h3>
+              </div>
+              <h2>Southpoint Stadium</h2>
             </div>
-            <h2>Southpoint Stadium</h2>
-          </div>
-          <div class="stat-card red">
-            <div class="card-title">
-              <i class="fas fa-briefcase-medical fa-2x"></i>
-              <h3>Injuries</h3>
+            <div class="stat-card red">
+              <div class="card-title">
+                <i class="fas fa-briefcase-medical fa-2x"></i>
+                <h3>Injuries</h3>
+              </div>
+              <h2>No Injuries</h2>
             </div>
-            <h2>No Injuries</h2>
+          </div> <!--- stat-cards--->
+          <div class="chart">
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
           </div>
-        </div> <!--- stat-cards--->
-        <div class="chart">
-          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-        </div>
-        <div class="table">
-          <table>
-            <tr>
-              <th>Team</th>
-              <th>MP</th>
-              <th>W</th>
-              <th>D</th>
-              <th>L</th>
-              <th>P</th>
-            </tr>
-            <tr>
-              <td>Braidwood Bears</td>
-              <td>10</td>
-              <td>9</td>
-              <td>1</td>
-              <td>0</td>
-              <td>28</td>
-            </tr>
-            <tr>
-              <td>Southpoint Sharks</td>
-              <td>10</td>
-              <td>9</td>
-              <td>0</td>
-              <td>1</td>
-              <td>27</td>
-            </tr>
-            <tr>
-              <td><strong>Broulee Bandits<strong></td>
-              <td><strong>10<strong></td>
-              <td><strong>8<strong></td>
-              <td><strong>1<strong></td>
-              <td><strong>1<strong></td>
-              <td><strong>25<strong></td>
-            </tr>
-            <tr>
-              <td>Coogee Cowboys</td>
-              <td>10</td>
-              <td>6</td>
-              <td>2</td>
-              <td>2</td>
-              <td>20</td>
-            </tr>
-            <tr>
-              <td>Rosedale Raiders</td>
-              <td>10</td>
-              <td>4</td>
-              <td>3</td>
-              <td>3</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Narooma Dolphins</td>
-              <td>10</td>
-              <td>2</td>
-              <td>1</td>
-              <td>7</td>
-              <td>7</td>
-            </tr>
-          </table>
-        </div>
-        <div class="chart">
+          <div class="table-div">
+            <table>
+              <tr>
+                <th>Team</th>
+                <th>MP</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>P</th>
+              </tr>
+              <tr>
+                <td>Braidwood Bears</td>
+                <td>10</td>
+                <td>9</td>
+                <td>1</td>
+                <td>0</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td>Southpoint Sharks</td>
+                <td>10</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td><strong>Broulee Bandits<strong></td>
+                <td><strong>10<strong></td>
+                <td><strong>8<strong></td>
+                <td><strong>1<strong></td>
+                <td><strong>1<strong></td>
+                <td><strong>25<strong></td>
+              </tr>
+              <tr>
+                <td>Coogee Cowboys</td>
+                <td>10</td>
+                <td>6</td>
+                <td>2</td>
+                <td>2</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Rosedale Raiders</td>
+                <td>10</td>
+                <td>4</td>
+                <td>3</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Narooma Dolphins</td>
+                <td>10</td>
+                <td>2</td>
+                <td>1</td>
+                <td>7</td>
+                <td>7</td>
+              </tr>
+            </table>
+          </div>
+          <div class="chart">
 
-        </div>
-      </div> <!--- main-container --->
+          </div>
+        </div> <!--- dashboard grid --->
+      </div> <!--- dashboard-container --->
     </section>
     <!-- <footer class="main-footer">
     </footer> -->
